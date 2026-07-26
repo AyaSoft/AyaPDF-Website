@@ -2,8 +2,8 @@
     "name": "AyaPDF for ChatGPT",
     "short_name": "AyaPDF",
     "description": "Export ChatGPT conversations to beautiful, professional PDF documents.",
-    "start_url": "/",
-    "scope": "/",
+   "start_url": "/AyaPDF-Website/",
+"scope": "/AyaPDF-Website/"
     "display": "standalone",
     "orientation": "portrait",
     "background_color": "#ffffff",
