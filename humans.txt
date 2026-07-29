@@ -1,0 +1,37 @@
+/* TEAM */
+
+Company: AyaSoft
+Website: https://ayasoft.es
+Email: info@ayasoft.es
+Facebook: https://facebook.com/AyaSoftES
+
+/* PRODUCT */
+
+Name: AyaPDF for ChatGPT
+Version: 1.0.0
+
+Description:
+Export ChatGPT conversations to beautiful,
+professional PDF documents.
+
+/* TECHNOLOGIES */
+
+HTML5
+CSS3
+JavaScript
+GitHub Pages
+
+/* SITE */
+
+URL:
+https://ayasoft.es
+
+Language:
+English
+
+Last Updated:
+2026
+
+/* THANK YOU */
+
+Thank you for visiting AyaSoft.

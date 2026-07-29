@@ -1,0 +1,65 @@
+/* =======================================
+   SUPPORT
+======================================= */
+
+.support-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.support-grid .card{
+
+    text-align:center;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    min-height:320px;
+
+}
+
+.support-grid h3{
+
+    font-size:1.5rem;
+
+    margin-bottom:18px;
+
+}
+
+.support-grid p{
+
+    color:var(--text-light);
+
+    margin-bottom:30px;
+
+    flex:1;
+
+}
+
+.support-grid .btn{
+
+    width:100%;
+
+}
+
+/* =======================================
+   RESPONSIVE
+======================================= */
+
+@media (max-width:992px){
+
+    .support-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

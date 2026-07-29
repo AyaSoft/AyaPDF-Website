@@ -1,0 +1,211 @@
+/* ==========================================
+   1200px
+========================================== */
+
+@media (max-width:1200px){
+
+    .container{
+        width:min(calc(100% - 40px),1100px);
+    }
+
+}
+
+
+/* ==========================================
+   992px
+========================================== */
+
+@media (max-width:992px){
+
+    .footer-grid{
+
+        grid-template-columns:1fr 1fr;
+        gap:50px;
+
+    }
+
+}
+
+
+/* ==========================================
+   768px
+========================================== */
+
+@media (max-width:768px){
+
+    :root{
+
+        --header-height:72px;
+
+    }
+
+    .menu-toggle{
+
+        display:block;
+        z-index:1002;
+
+    }
+
+    .main-nav{
+
+        position:fixed;
+
+        top:72px;
+        left:0;
+        right:0;
+
+        background:#ffffff;
+
+        border-top:1px solid var(--border);
+
+        box-shadow:0 20px 40px rgba(0,0,0,.08);
+
+        padding:20px;
+
+        transform:translateY(-120%);
+        opacity:0;
+        visibility:hidden;
+
+        transition:.3s;
+
+    }
+
+    .main-nav.active{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+        visibility:visible;
+
+    }
+
+    .main-nav ul{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:18px;
+
+    }
+
+    .nav-download{
+
+        width:100%;
+        margin-top:10px;
+
+    }
+
+    .nav-download .btn-download{
+
+        width:100%;
+        justify-content:center;
+
+    }
+
+    .menu-toggle.active span:nth-child(1){
+
+        transform:translateY(8px) rotate(45deg);
+
+    }
+
+    .menu-toggle.active span:nth-child(2){
+
+        opacity:0;
+
+    }
+
+    .menu-toggle.active span:nth-child(3){
+
+        transform:translateY(-8px) rotate(-45deg);
+
+    }
+
+    .section-title{
+
+        font-size:2rem;
+
+    }
+
+    .section-subtitle{
+
+        font-size:1rem;
+
+        margin-bottom:40px;
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+        gap:40px;
+
+    }
+
+    .footer-bottom-content{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:25px;
+
+    }
+
+}
+
+
+/* ==========================================
+   576px
+========================================== */
+
+@media (max-width:576px){
+
+    .container{
+
+        width:calc(100% - 24px);
+
+    }
+
+    section{
+
+        padding:70px 0;
+
+    }
+
+    .section-title{
+
+        font-size:1.8rem;
+
+    }
+
+    .logo span{
+
+        font-size:1.15rem;
+
+    }
+
+    .logo img{
+
+        width:42px;
+        height:42px;
+
+    }
+
+    .footer-logo img{
+
+        width:42px;
+        height:42px;
+
+    }
+
+    .btn,
+    .btn-download{
+
+        width:100%;
+
+    }
+
+}

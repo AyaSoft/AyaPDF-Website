@@ -1,0 +1,563 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+
+  --text: #1f2937;
+  --text-light: #6b7280;
+
+  --white: #ffffff;
+
+  --bg: #f8fafc;
+  --bg-light: #f8fafc;
+
+  --border: #e5e7eb;
+
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  --header-height: 76px;
+
+  --radius: 14px;
+
+  --transition: 0.25s ease;
+
+  --container: 1280px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+
+  color: var(--text);
+
+  background: var(--bg);
+
+  line-height: 1.7;
+
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+
+  text-decoration: none;
+
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: min(calc(100% - 40px), var(--container));
+
+  margin: auto;
+}
+
+main {
+  min-height: 70vh;
+}
+
+/* =======================================
+   HEADER
+======================================= */
+
+.site-header {
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid transparent;
+
+  transition: var(--transition);
+  padding-top: 15px;
+  pdding-bottom: 15px;
+  border-bottom: 2px solid var(--border);
+}
+
+.site-header.scrolled {
+  border-bottom: 1px solid var(--border);
+
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+}
+
+.header-container {
+  height: var(--header-height);
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  font-size:35px;
+
+  font-weight: 800;
+}
+
+.logo img {
+  width: 70px;
+
+  height: 70px;
+
+}
+
+.main-nav ul {
+  display: flex;
+
+  align-items: center;
+
+  gap: 24px;
+
+
+
+}
+
+.main-nav a {
+  color: #000;
+  font-size:18px;
+
+  font-weight: 500;
+  font-weight: 700;
+}
+
+.main-nav a:hover {
+  color: var(--primary);
+}
+
+.main-nav a.active {
+  color: var(--primary);
+
+  font-weight: 700;
+}
+
+.btn-download {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 13px 26px;
+
+  background: var(--primary);
+
+  color: #fff !important;
+
+  border-radius: 999px;
+
+  font-weight: 900;
+}
+
+.btn-download:hover {
+  background: var(--primary-dark);
+}
+
+.menu-toggle {
+  display: none;
+
+  background: none;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+
+  width: 26px;
+
+  height: 3px;
+
+  background: #222;
+
+  margin: 5px 0;
+
+  transition: 0.3s;
+}
+
+
+
+/* =======================================
+   FOOTER
+======================================= */
+
+.site-footer {
+  margin-top: 100px;
+
+  background: #0f172a;
+
+  color: #cbd5e1;
+}
+
+.footer-grid {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+
+  gap: 60px;
+
+  padding: 30px 0;
+}
+
+.footer-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 20px;
+
+  color: #fff;
+
+  font-size: 1.35rem;
+
+  font-weight: 700;
+}
+
+.footer-logo img {
+  width: 48px;
+
+  height: 48px;
+}
+
+.footer-brand p {
+  max-width: 420px;
+
+  color: #94a3b8;
+}
+
+.footer-column h4 {
+  color: #fff;
+
+  margin-bottom: 20px;
+
+  font-size: 1rem;
+}
+
+.footer-column ul {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.footer-column a {
+  color: #94a3b8;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom-content {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 40px;
+
+  padding: 30px 0;
+}
+
+.footer-copy p {
+  margin-bottom: 8px;
+}
+
+.footer-note {
+  color: #94a3b8;
+
+  font-size: 0.9rem;
+
+  max-width: 760px;
+}
+
+.footer-links {
+  display: flex;
+
+  gap: 25px;
+
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+
+  font-weight: 500;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* =======================================
+   BUTTONS
+======================================= */
+
+.btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 28px;
+
+  border-radius: 999px;
+
+  font-weight: 600;
+
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--primary);
+
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+
+  color: #fff;
+}
+
+/* =======================================
+   COMMON SECTIONS
+======================================= */
+
+section {
+  padding: 40px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+
+  font-weight: 700;
+
+  text-align: center;
+
+  margin-bottom: 18px;
+}
+
+.section-subtitle {
+  max-width: 760px;
+
+  margin: 0 auto 60px;
+
+  text-align: center;
+
+  color: var(--text-light);
+
+  font-size: 1.1rem;
+}
+
+/* =======================================
+   CARDS
+======================================= */
+
+.card {
+  background: #fff;
+
+  border: 1px solid var(--border);
+
+  border-radius: var(--radius);
+
+  box-shadow: var(--shadow);
+
+  padding: 20px;
+
+  transition: var(--transition);
+  border-color: black;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* =======================================
+   UTILITIES
+======================================= */
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 {
+  margin-top: 10px;
+}
+.mt-2 {
+  margin-top: 20px;
+}
+.mt-3 {
+  margin-top: 30px;
+}
+.mt-4 {
+  margin-top: 40px;
+}
+.mt-5 {
+  margin-top: 60px;
+}
+
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-2 {
+  margin-bottom: 20px;
+}
+.mb-3 {
+  margin-bottom: 30px;
+}
+.mb-4 {
+  margin-bottom: 40px;
+}
+.mb-5 {
+  margin-bottom: 60px;
+}
+
+.py-0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* =======================================
+   ANIMATIONS
+======================================= */
+
+.fade-in {
+  animation: fadeIn 0.8s ease both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* =======================================
+   SELECTION
+======================================= */
+
+::selection {
+  background: var(--primary);
+
+  color: #fff;
+}
+
+/* =======================================
+   SCROLLBAR
+======================================= */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.buymecoffe {
+  border: 3px sold red;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: green;
+  color: white;
+  margin-top: 10px;
+  width: 200px;
+  weight:700;
+  font-size: 20px;
+}
+
+.buymecoffe:hover {
+  background-color: rgb(255, 238, 0);
+  color: black;
+  transform:translateY(-3px);
+}
+
+

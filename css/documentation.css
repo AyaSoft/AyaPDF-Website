@@ -1,0 +1,155 @@
+/* =======================================
+   DOCUMENTATION LAYOUT
+======================================= */
+
+.doc-grid{
+
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    gap:50px;
+
+    align-items:start;
+
+}
+
+/* =======================================
+   SIDEBAR
+======================================= */
+
+.doc-sidebar{
+
+    position:sticky;
+
+    top:100px;
+
+    background:#ffffff;
+
+    border:1px solid var(--border);
+
+    border-radius:16px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.doc-sidebar ul{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+.doc-sidebar a{
+
+    display:block;
+
+    padding:10px 14px;
+
+    border-radius:10px;
+
+    color:var(--text-light);
+
+    transition:var(--transition);
+
+}
+
+.doc-sidebar a:hover{
+
+    background:#eff6ff;
+
+    color:var(--primary);
+
+}
+
+/* =======================================
+   CONTENT
+======================================= */
+
+.doc-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+    
+
+}
+
+.doc-content section{
+
+    padding:10px;
+
+    background:#ffffff;
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.doc-content h2{
+
+    margin-bottom:18px;
+
+    color:var(--primary);
+
+    font-size:1.8rem;
+
+}
+
+.doc-content p{
+
+    color:var(--text-light);
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+
+}
+
+/* =======================================
+   RESPONSIVE
+======================================= */
+
+@media (max-width:992px){
+
+    .doc-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .doc-sidebar{
+
+        position:static;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .doc-content section{
+
+        padding:24px;
+
+    }
+
+    .doc-content h2{
+
+        font-size:1.5rem;
+
+    }
+
+}
+

@@ -1,0 +1,16 @@
+# ============================================
+# AyaPDF Website
+# https://ayasoft.es
+# ============================================
+
+User-agent: *
+Allow: /
+
+# Prevent indexing of internal folders if needed
+# Disallow: /includes/
+
+# Sitemap
+Sitemap: https://ayasoft.es/sitemap.xml
+
+# Host
+Host: https://ayasoft.es
