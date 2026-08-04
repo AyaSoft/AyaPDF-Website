@@ -4,7 +4,7 @@
 
 .hero{
 
-    padding:110px 0 90px;
+    padding:60px 0 90px;
 
     /* background:linear-gradient(
         180deg,
@@ -19,7 +19,7 @@
 
     display:grid;
 
-    grid-template-columns:1.1fr .9fr;
+    grid-template-columns:1fr 1.2fr;
 
     align-items:center;
 
@@ -95,7 +95,7 @@
 
     width:100%;
 
-    max-width:560px;
+    max-width:800px;
 
     margin:auto;
 
